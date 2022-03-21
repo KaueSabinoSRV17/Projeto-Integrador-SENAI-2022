@@ -1,0 +1,174 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(175, 91, 175);
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    background-color: purple;
+    border: 1px solid black;
+}
+
+.logo {
+    background-color: white;
+    height: auto;
+    width: 4%;
+}
+
+header>h1 {
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+header>nav>ul {
+    display: flex;
+    margin: 15px 20px;
+}
+
+header>nav>ul>li>a {
+    margin: 10px;
+    background: black;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+main h1 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.container-jogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: white;
+}
+
+.jogo {
+    margin: 10px;
+    background: white;
+    padding: 10px;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+.jogo>img {
+    height: 90%;
+    width: 450px;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+ol>li,
+ul>li {
+    margin: 20px;
+}
+
+.jogo>h2 {
+    text-align: center;
+}
+
+.status {
+    margin: 50px auto 0px auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.status h3 {
+    margin: 10px auto;
+}
+
+.status thead {
+    background-color: black;
+    color: white;
+}
+
+.status th,
+td {
+    border: 1px solid black;
+}
+
+.status th,
+td {
+    padding: 5px;
+}
+
+.status-cover {
+    width: 100px;
+    height: auto;
+    padding: 2px;
+    border: 1px solid black;
+}
+
+.emBreve,
+section,
+.Chat {
+    background: white;
+    border: 1px solid black;
+    height: 1080px;
+    padding: 10px;
+}
+
+.emBreve {
+    width: 350px;
+}
+
+.emBreve p {
+    margin: 10px 0px 0px 0px;
+}
+
+section {
+    width: 100%;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+footer>p {
+    text-align: center;
+}
+
+@media only screen and (max-width:1050px) {
+    .container-jogos {
+        display: flex;
+        flex-direction: column;
+    }
+    .jogo {
+        margin: 10px auto;
+    }
+    .jogo img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .container-jogos {
+        display: flex;
+        flex-direction: column;
+    }
+    .jogo {
+        margin: 10px auto;
+    }
+    .jogo img {
+        width: 100%;
+    }
+}
