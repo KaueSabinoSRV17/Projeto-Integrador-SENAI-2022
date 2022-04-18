@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<header class="cb">
+	        <nav class="nv">
+	            <ul class="listaLinks">
+	                <li class="liLink"><a href="index.html" class="linkCBForm">Home</a></li>
+	                <li class="liLink"><a href="/jogos" class="linkCBForm">Jogos</a></li>
+	                <li class="liLink"><a href="/cadastrarJogo" class="linkCBForm">Cadastrar Novo Jogo</a></li>
+	            </ul>
+	        </nav>
+	    </header>
+	    <form method="post">
+
+			<h1>Atualizar Jogo</h1>
+
+			<br>
+
+			<div class="form-group">
+				<label for=""><b>Nome do Jogo:</b> </label> <input type="text" class="form-control" value=""
+					name="nome" th:attr="value = ${jogo.nome}" required />
+				<label for=""><b>Plataformas:</b> </label> <input type="text" class="form-control" value=""
+					name="plataformas" th:attr="value = ${jogo.plataformas}" required />
+				<label for=""><b>Data de Lançamento:</b> </label> <input type="text" class="form-control" value=""
+					name="dataLancamento" th:attr="value = ${jogo.dataLancamento}" required />
+				<label for=""><b>Data de Última Atualização:</b> </label> <input type="text" class="form-control" value=""
+					name="dataUltimaAtualizacao" th:attr="value = ${jogo.dataUltimaAtualizacao}" required />
+				<label for=""><b>Quantidade de Personagens:</b> </label> <input type="text" class="form-control" value=""
+					name="quantidadePersonagens" th:attr="value = ${jogo.quantidadePersonagens}" required />
+			</div>
+
+
+
+			<button type="submit" class="btn btn-success">Salvar</button>
+		</form>
+</body>
+</html>

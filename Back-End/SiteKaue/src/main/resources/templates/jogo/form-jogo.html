@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Jogo</title>
+</head>
+<body>
+    <header class="cb">
+        <nav class="nv">
+            <ul class="listaLinks">
+                <li class="liLink"><a href="index.html" class="linkCBForm">Home</a></li>
+                <li class="liLink"><a href="/jogos" class="linkCBForm">Jogos</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <main class="conteudoPrincipalFormJogo">
+        <form method="post">
+            <label for="nome" name="nome">Nome do Jogo: </label><input type="text" name="nome" id="nome"><br><br>
+            <label for="plataformas" name="plataformas">Plataformas: </label><input type="text" name="plataformas" id="plataformas"><br><br>
+            <label for="dataCriacao" name="dataCriacao">Data de Criação: </label><input type="text" name="dataCriacao" id="dataCriacao"><br><br>
+            <label for="dataUltimaAtualizacao" name="dataUltimaAtualizacao">Data do Último Patch (Atualização): </label><input type="text" name="dataUltimaAtualizacao" id="dataUltimaAtualizacao"><br><br>
+            <label for="quantidadePersonagem" name="quantidadePersonagem">Quantidade de Personagens: </label><input type="number" name="quantidadePersonagem" id="quantidadePersonagem"><br><br>
+            <button type="submit">Cadastrar Jogo</button>
+        </form>
+    </main>
+</body>
+</html>
