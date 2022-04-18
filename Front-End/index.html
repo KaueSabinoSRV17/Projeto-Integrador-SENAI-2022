@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/modal.css">
+    <link rel="stylesheet" href="_css/menu.css">
+    <script src="_javascript/modal.js" defer></script>
+    <script src="_javascript/drop.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Messatsu</h1>
+        <nav id="nav">
+            <button class="sand" id="btn">+</button>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigos.html">Artigos +</a>
+                    <ul>
+                        <li><a href="fund.html">Fundamentos</a></li>
+                        <li><a href="golpes.html">Golpes Normais</a></li>
+                        <li><a href="magias.html">Golpes Especiais</a></li>
+                    </ul>
+                </li>
+                <li><a href="jogos.html">Jogos +</a>
+                    <ul>
+                        <li><a href="street.html">Street Fighter</a></li>
+                    </ul>
+                </li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="emBreve">
+            <h1>Em Breve</h1>
+            <p>Aqui estará tudo o que está previsto a ser adicionado no site</p>
+        </aside>
+        <section>
+            <h1>Novidades</h1>
+            <p>Aqui estará listado tudo o que foi adicionado no site na última atualização</p>
+            <table class="status">
+                <thead>
+                    <tr>
+                        <th>Jogo</th>
+                        <th>Status de Cobertura</th>
+                        <th>Data da Última Atualização</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3>Street Fighter V</h3>
+                            <img src="_imagens/street-cover.jpg" alt="" class="status-cover">
+                        </td>
+                        <td>Progresso (em porcentagem)</td>
+                        <td>02/08/2021</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Mortal Kombat 11</h3>
+                            <img src="_imagens/mortal-cover.jpg" alt="" class="status-cover">
+                        </td>
+                        <td>Progresso (em porcentagem)</td>
+                        <td>02/08/2021</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Tekkenn 7</h3>
+                            <img src="_imagens/tekken-cover.jpg" alt="" class="status-cover">
+                        </td>
+                        <td>Progresso (em porcentagem)</td>
+                        <td>02/08/2021</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>The King of Fighter</h3>
+                            <img src="_imagens/kof-cover.jpg" alt="" class="status-cover">
+                        </td>
+                        <td>Progresso (em porcentagem)</td>
+                        <td>02/08/2021</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Direitos Reservados para @<strong>Kauê Sabino</strong></p>
+    </footer>
+    <div class="fundo_modal" id="modal" style="top: -100%; display: block;">
+        <div class="modal">
+            <img src="_imagens/logo.png">
+            <span class="fechar" id="x" onclick="fecharModal() ">×</span>
+        </div>
+    </div>
+    <script src="_javascript/modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    padding: 0px;
+    background-color: purple;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.logo {
+    background-color: white;
+    height: auto;
+    width: 4%;
+}
+
+header>h1 {
+    display: inline;
+    background: black;
+    color: white;
+    padding: 5px;
+    text-align: right;
+}
+
+header>nav>ul {
+    display: flex;
+    margin: 0px;
+}
+
+header>nav>ul>li>a {
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+}
+
+.tema {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+main {
+    display: flex;
+    background: white;
+    padding: 10px;
+}
+
+fieldset {
+    font-size: initial;
+    width: auto;
+    padding: 0px 20px 10px 20px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+.flexForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 75px;
+    justify-content: flex-start;
+}
+
+label {
+    margin: 5px 0px;
+    padding: 5px;
+    color: black;
+    width: fit-content;
+}
+
+label h2 {
+    text-align: left;
+    margin: 2.5px 0px;
+}
+
+label input {
+    margin-bottom: 5px;
+    padding: 2.5px;
+}
+
+legend {
+    text-align: center;
+    color: white;
+    width: fit-content;
+    margin: 10px auto 25px auto;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+}
+
+main h1 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.container-jogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: white;
+}
+
+.jogo {
+    margin: 10px;
+    background: white;
+    padding: 10px;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+.jogo>img {
+    height: 90%;
+    width: 450px;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+.jogo>h2 {
+    text-align: center;
+}
+
+.status {
+    margin: 50px auto 0px auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.status h3 {
+    margin: 10px auto;
+}
+
+.status thead {
+    background-color: black;
+    color: white;
+}
+
+.status th,
+td {
+    border: 1px solid black;
+}
+
+.status th,
+td {
+    padding: 5px;
+}
+
+.status-cover {
+    width: 100px;
+    height: auto;
+    padding: 2px;
+    border: 1px solid black;
+}
+
+.emBreve,
+section,
+.Chat {
+    background: white;
+    border: 1px solid black;
+    height: 1080px;
+    padding: 10px;
+}
+
+.emBreve {
+    width: 350px;
+}
+
+.emBreve p {
+    margin: 10px 0px 0px 0px;
+}
+
+section {
+    width: 100%;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+footer>p {
+    text-align: center;
+}
+
+@media only screen and (max-width:1050px) {
+    .container-jogos {
+        display: flex;
+        flex-direction: column;
+    }
+    .jogo {
+        margin: 10px auto;
+    }
+    .jogo img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .container-jogos {
+        display: flex;
+        flex-direction: column;
+    }
+    .jogo {
+        margin: 10px auto;
+    }
+    .jogo img {
+        width: 100%;
+    }
+}

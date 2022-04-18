@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/modal.css">
+    <link rel="stylesheet" href="_css/menu.css">
+    <script src="_javascript/modal.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="drop">
+            <ul>
+                <li class="games"><a href="jogos.html">Jogos</a></li>
+                <ul>
+                    <li><a href="street.html">Street Fighter</a></li>
+                    <li><a href="mortal.html">Mortal Kombat</a></li>
+                    <li><a href="king.html">The King Of Fighters</a></li>
+                    <li><a href="tekken.html">Tekken</a></li>
+                    <li><a href="braw.html">Brawhalla</a></li>
+                    <li><a href="smash.html">Smash Bros</a></li>
+                    <li><a href="injustice.html">Injustice</a></li>
+                    <li><a href="gulty.html">Guilty Gear</a></li>
+                </ul>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+
+            </ul>
+        </nav>
+        <div class="tema">
+            <img src="_imagens/logo.png" alt="Um Kanji que signigica poder absoluto, representando o logo do site" class="logo" onclick="abrirModal()">
+            <h1>Messatsu</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Iniciantes</h2>
+            <ol>
+                <li>
+                    <h3>Botôes (Golpes Básicos)</h3>
+                </li>
+                <article>
+                    <p>Os "Botôes" ou Golpes Básicos são os golpes que exigem apenas um botão ou no máximo uma combinação de direção e um botão. São geralmente suas opções para o jogo neutro, onde se deve controlar seu espaço com os golpes que tem um bom
+                        balanceamento de alcance, velocidade, positividade e baixa recuperação (mais na seção de frame data</p>
+                </article>
+                <li>
+                    <h3>Magias (Golpes Especiais)</h3>
+                </li>
+                <article>
+                    <p>As "Magias" são os golpes especiais de um personagem. Exemplos clássicos seriam o "Hadouken" ou "Shoryuken" de Ryu, do Street Fighter. na maioria das vezes eles tem algum tipo de vantagem sobre os golpes básicos, seja quando são mais
+                        rápidos, invencíveis a certos tipos de golpes, boas propriedades antiaéreas, projéteis, entre outros, com a desvantagem serem geralmennte puníveis e exigindo uma combinação de movimentos e botôes (algumas vezes complexos, como
+                        movimentos de charge, 360ª e movimentos em "Z" (Shoryuken)</p>
+                </article>
+                <li>
+                    <h3>Magias EX (Golpes Especiais Com Barra)</h3>
+                </li>
+                <article>
+                    <p>Na Maioria dos jogos modernos, existe o sistema de barras, onde se ganha a habilidade de gastar estas barras para aprimorar golpes que já existem, ou gastá-las para uma infinidade de opções defensivas ou ofensivas (um exemplo seria
+                        o Combo Breaker do Mortal Kombat). entre outras coisas, estes golpes aprimorados podem ganhar velocidade, positividade, invencibilidade e muito mais, custando uma barra de energia</p>
+                </article>
+                <li>
+                    <h3>Movimenntação</h3>
+                </li>
+                <article>
+                    <p>Na maioria dos jogos 2d, há a possibilidade de movimentar mais rápido através de pulos ou dashs. Sempre dê prioridade para dashes para frente para se aproximar, realizando estas com a certeza de que o oponente não consiguirá de punir
+                        enquanto está em sua animação. Os pulos são um mal hábito, e devem ser usados apenas a título de mix-ups. uma das primeiras coisas que diferem um bom jogador de um jogador ruim é a habilidade de manter o jogo no chão, não pulando,
+                        e punindo absolutamente todo pulo do adversário</p>
+                </article>
+                <li>
+                    <h3>O Que é Frame Data</h3>
+                </li>
+                <article>
+                    <p>A Frame Data nada mais é do que uma medida de tempo dos golpes de todos os personagens de um jogo de luta. É considerado um jogo rodando a 60 frames por segundo. os tipos de frame data são separados em:</p>
+                    <ul>
+                        <li>
+                            <h4>Startup</h4>
+                        </li>
+                        <p>Este seria o tempo que leva do início do golpe até a primeira frame em que ele pode causar dano. se um personagem usar um golpe com startup de 5 frames ao mesmo tempo que outro usar um golpe de 6 frames de startup, o de 5 frames
+                            de startup vencerá</p>
+                        <li>
+                            <h4>Ativas</h4>
+                        </li>
+                        <p>Estas seriam da primeira frame que pode causar dano ao adiversário até a ultima. para exemplificar melhor, na vida real, uma arma que tem muitas frames ativas seria um lança chamas, pois o fogo fica no ar por bastane tempo. uma
+                            arma com poucas frames ativas seria qualquer arma de fogo, pois as balas ficam pouco tempo no ar</p>
+                        <li>
+                            <h4>Recuperação</h4>
+                        </li>
+                        <p>Estas seriam as frames após a última ativa, em que o personagem precisa terminar a animação de um golpe até que possa fazer qualquer outra coisa (no caso de ter errado o golpe, esta "outra coisa" sempre deverá ser bloquear!). acertar
+                            um adversário durante estas frames é o chamado whiff punish</p>
+                    </ul>
+                </article>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>Direitos reservados a @<strong>Kauê Sabino</strong></p>
+    </footer>
+</body>

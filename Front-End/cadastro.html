@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/modal.css">
+    <link rel="stylesheet" href="_css/menu.css">
+    <script src="_javascript/modal.js" defer></script>
+    <script src="_javascript/drop.js" defer></script>
+    <script src="_javascript/valida.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Messatsu</h1>
+        <nav id="nav">
+            <button class="sand" id="btn">+</button>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigos.html">Artigos +</a>
+                    <ul>
+                        <li><a href="fund.html">Fundamentos</a></li>
+                        <li><a href="golpes.html">Golpes Normais</a></li>
+                        <li><a href="magias.html">Golpes Especiais</a></li>
+                    </ul>
+                </li>
+                <li><a href="jogos.html">Jogos +</a>
+                    <ul>
+                        <li><a href="street.html">Street Fighter</a></li>
+                    </ul>
+                </li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="position: relative; display: block;">
+        <form action="" onsubmit="return validaTudo()">
+            <fieldset>
+                <legend>
+                    <h1>Cadastro de Novo Cliente</h1>
+                </legend>
+                <div class="flexForm">
+                    <label for="nome">
+                        <h2>Nome</h2><input type="text" id="nome" maxlength="20">
+                    </label>
+                    <label for="cpf">
+                        <h2>Cpf</h2><input type="text" id="cpf" maxlength="14" onkeypress="mascCpf(this)">
+                    </label>
+                    <label for="telefone">
+                        <h2>Telefone</h2><input type="text" id="telefone" maxlength="14" onkeypress="mascTelefone(this)">
+                    </label>
+                    <label for="celular">
+                        <h2>Celular</h2><input type="text" id="celular" maxlength="14" onkeypress="mascTelefone(this)">
+                    </label>
+                    <label>
+                        <h2>Cep:</h2>
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                            onblur="pesquisacep(this.value);" />
+                    </label>
+                    <label>
+                        <h2>Rua:</h2>
+                        <input name="rua" type="text" id="rua" size="60" />
+                    </label>
+                    <label>
+                        <h2>Bairro:</h2>
+                        <input name="bairro" type="text" id="bairro" size="40" />
+                    </label>
+                    <label>
+                        <h2>Cidade:</h2>
+                        <input name="cidade" type="text" id="cidade" size="40" />
+                    </label>
+                    <label>
+                        <h2>Estado:</h2>
+                        <input name="uf" type="text" id="uf" size="2" />
+                    </label>
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
